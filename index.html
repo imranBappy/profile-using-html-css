@@ -4,7 +4,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 500px;
+        margin: 2px auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .container .profile_pic {
+        display: flex;
+        justify-content: center;
+      }
+      .container .profile_pic img {
+        width: 100%;
+        border: 5px solid royalblue;
+        border-radius: 100%;
+      }
+
+      .profile_info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .profile_info h1 {
+        font-size: 2.3rem;
+      }
+      .profile_info p {
+        font-size: 1rem;
+        text-align: justify;
+        line-height: 1.5;
+      }
+
+      .profile_info a {
+        text-decoration: none;
+        font-size: 1.5rem;
+      }
+      @media only screen and (max-width: 550px) {
+        body {
+          margin: auto 20px;
+        }
+      }
+    </style>
     <title>Document</title>
   </head>
   <body>
